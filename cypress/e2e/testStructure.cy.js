@@ -25,10 +25,15 @@ describe ('My First Tests', () => {
     })
 
     it('Opening a web application', ()=>{
-        cy.visit("/registration_form");
+        //cy.visit("/registration_form");
         cy.get(':nth-child(41)').click();
-        cy.get(':nth-child(1) > .col-sm-5 > .form-control').type('elif');
+    })
 
-       
+    it ('Checking equality', () => {
+        expect(4).to.equal(3);
+    })
+
+    it ('Checking equality', () => {
+        expect(true).to.equal('3'==3);
     })
 })
